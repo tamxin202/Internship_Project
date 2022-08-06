@@ -1,0 +1,34 @@
+.swiper {
+  /* width: 100%; */
+  height: 500px;
+  background: #e1e1e1;
+}
+.swiper-slide {
+  padding: 150px 300px;
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  margin-right: 300px;
+}
+.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  margin-left: 170px;
+}
+
+.swiper-slide-heading {
+  margin: 0px;
+  line-height: 59px;
+  font-family: "Montserrat";
+  font-size: 48px;
+  font-weight: 900;
+}
+.swiper-slide-content {
+  max-width: 500px;
+  line-height: 19px;
+  position: absolute;
+  color: #404040;
+  font-size: 15px;
+  font-weight: 400;
+}
