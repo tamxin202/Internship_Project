@@ -1,5 +1,5 @@
 .footer{
-    height: 390px;
+    height: 400px;
     background: #404040;
 }
 .contact-form{
@@ -8,6 +8,7 @@
 
 }
 .contact-form-title{
+    margin-top: 39px;
     font-size: 16px;
     /* font-weight: 700; */
     font-weight: 700px;

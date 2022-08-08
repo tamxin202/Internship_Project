@@ -2,8 +2,13 @@ html{
     font-family: 'Montserrat', sans-serif;
 }
 body{
-    width: 100%;
+    max-width: 1920px;
     margin: 0px;
+    padding: 0px;
+}
+.container{
+    max-width: 1920px;
+    margin: auto;
 }
 /* @media screen and (max-width: 900px) {
     .nav-bar {
@@ -13,18 +18,20 @@ body{
 } */
 .nav-bar{
     display: flex;
-    min-height: 50px;
-    background-color: rgb(231, 238, 238);
+    max-width: 1920px;
+    height: 80px;
+    background-color: white;
     justify-content: space-between;
 }
 .header-logo{
-    margin: auto 170px;
+    margin: 10px;
+    margin-left: 190px;
 }
 
 .nav-list{
     display: flex;
     /* padding-left: 0; */
-    margin: auto 140px;
+    margin: auto 170px;
     margin-left: 0px;
 }
 .nav-list li{
@@ -38,14 +45,15 @@ body{
     text-decoration: none;
 }
 .nav-item span{
-    line-height: 17px;
-    padding: 1px 3px;
-    margin: auto 6px;
+    line-height: 20px;
+    padding: 0px 3px;
+    /* margin: auto 14px; */
+    margin-left: 14px;
     color: aliceblue;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 15px;
     background-color:  #333333;
 }
