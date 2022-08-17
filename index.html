@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="CSS/style.css" />
     <link rel="stylesheet" href="CSS/slide.css" />
     <link rel="stylesheet" href="CSS/products.css" />
-    <link rel="stylesheet" href="CSS/footer.css">
+    <link rel="stylesheet" href="CSS/footer.css"/>
+    <link rel="stylesheet" href="CSS/Responsive.css"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
@@ -32,11 +33,11 @@
   </head>
   <body>
     <div class="container">
-      <div class="nav-bar">
+      <header class="nav-bar">
         <div class="header-logo">
-          <a href="#" >
+          <a href="#" >  
             <img
-              src="Images/clock-fire-time-logo-vector-2132368.jpg"
+              src="Images/logo.png"
               alt="Logoshop"
           /></a>
         </div>
@@ -57,8 +58,8 @@
             <a href="" class="nav-item">My Cart <span>3</span></a>
           </li>
         </div>
-      </div>
-    <!-- </div> -->
+      </header>
+ 
     <!-- Slider main container -->
     <div class="swiper">
       <!-- Additional required wrapper -->
@@ -91,7 +92,7 @@
       <div class="products">
         <!-- Feature Product -->
         <div class="top-products">
-          <h5 class="product-heading">Feature products</h5>
+          <h2 class="product-heading">Feature products</h2>
           <div class="top-products-content">
             <div class="left-content"></div>
             <div class="right-content">
@@ -106,9 +107,9 @@
   
         <!-- Our Product -->
         <div class="our-products">
-          <h5 class="product-heading">Our products</h5>
+          <h2 class="product-heading">Our products</h2>
           <div class="nav-bar-menu">
-             <li class="nav-item">
+             <li class="nav-item-active">
             <a class="nav-link" href="#">Technology </a>
           </li>
           <li class="nav-item">
@@ -119,10 +120,11 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">More</a>
-            <span><i class="fa-solid fa-caret-down"></i></span>
+            <i class="fa fa-chevron-down" aria-hidden="true"></i>
           </li>
           </div>
           <div class="cart-product">
+            <div class="cart-product-detail">
             <div class="cart">
               <div class="product-image"></div>
               <div class="product-name">Lorem ipsum dolor sit amet</div>
@@ -138,8 +140,8 @@
               <div class="product-name">Lorem ipsum dolor sit amet</div>
               <p class="product-price">$999.9</p>
             </div>
-          </div>
-          <div class="cart-product">
+          <!-- </div> -->
+          <!-- <div class="cart-product"> -->
             <div class="cart">
               <div class="product-image"></div>
               <div class="product-name">Lorem ipsum dolor sit amet</div>
@@ -157,6 +159,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
     <div class="shop-info">
@@ -174,7 +177,9 @@
         <button>Read More</button>
       </div>
     </div>
-    <div class="footer">
+
+
+    <footer class="footer">
       <div class="contact-form">
         <h4 class="contact-form-title">Find out more about us</h4>
         <div class="customer-email" >
@@ -182,7 +187,8 @@
           <button>SIGN UP</button>
         </div>
       </div>
-      <div class="more-info">
+      <section class="more-info">
+        <div class="more-info-content">
         <h3>GLuxury</h3>
         <div class="info-menu">
           <h5>Site</h5>
@@ -195,16 +201,20 @@
           <li> <a href="#">Privacy</a></li>
         </div>
         <div class="social-icon">
-          <li><i class="fa-brands fa-adn"></i></li>
-          <li><i class="fa-brands fa-adn"></i></li>
-          <li><i class="fa-brands fa-adn"></i></li>
-          <li><i class="fa-brands fa-adn"></i></li>
-          <li><i class="fa-brands fa-adn"></i></li>
-        </div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
       </div>
-      <p class="copy-right">Copyright informations</p>
-    </div>
-  </div>
+        </div>
+      <!-- </div> -->
+      </section>
+      <div class="copy-right">
+        <p class="copy-right-detail"> Copyright informations </p>
+      </div>
+    </footer>
+  <!-- </div> -->
   </body>
   <script src="Js/Slides.js"></script>
   <script src="Js/ResponsiveHeader.js"></script>
