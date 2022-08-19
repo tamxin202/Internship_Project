@@ -34,7 +34,8 @@ body {
 
 .nav-bar {
   display: flex;
-  max-width: 1920px;
+  /* max-width: 1920px; */
+  /* margin: 0 362px; */
   height: 80px;
   background-color: white;
   justify-content: center;
@@ -45,7 +46,7 @@ body {
   align-items: center;
   width: 60px;
   height: 60px;
-  margin-right: 10%;
+  margin-right: 11%;
   align-self: center;
 }
 .header-logo img{
@@ -63,11 +64,21 @@ body {
 }
 .nav-item {
   display: flex;
-  margin: 0 20px;
   color: rgb(6, 8, 10);
   font-size: 15px;
   text-decoration: none;
 }
+
+.nav-list li:not(:nth-child(-1n+1)):not(:nth-last-child(-1n+1)) {
+  margin: 0 20px;
+}
+.nav-list li:first-child{
+  margin-right: 20px;
+}
+.nav-list li:last-child{
+  margin-left: 35px;
+}
+
 .nav-item span {
   /* line-height: 20px; */
   padding:  2px 7px;
