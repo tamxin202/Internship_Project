@@ -1,12 +1,12 @@
 @media screen and (max-width: 900px) {
   /* Header */
-  .nav-bar {
+  .header {
     width: 100%;
     position: fixed;
     z-index: 3;
   }
   .header-logo {
-    margin-left: -70%;
+    margin-left: 3%;
   }
   .hamburger {
     display: block;
@@ -104,16 +104,16 @@
     font-size: 1.4rem;
     font-weight: 900;
   }
-  .nav-bar-menu {
-    height: 3rem;
-  }
-  .nav-bar-menu .nav-item,
-  .nav-bar-menu .nav-item-active {
-    font-size: 0.7rem;
-  }
-  .nav-bar-menu .nav-item-active {
-    border-bottom: 0.2em solid rgb(24, 24, 23);
-  }
+  .product-nav {
+    display: block;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+.nav-bar-menu {
+  white-space: nowrap;
+  justify-content: space-between;
+  gap: 50px;
+  margin: 0 15px;}
 
   .nav-bar-menu .nav-item i {
     margin-left: 5px;
@@ -166,38 +166,39 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* .top-products-content{
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.left-content{
-  width: 100%;
-  background-color: #0e0b0b;
-  border-radius: 10px;
-} */
+
 .products {
   width: 80%;   
-
 }
   .card {
     width: 50%;
   }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 320px) {
   .cart-product .cart-product-detail .card {
     width: 100%;
   }
+  .container{
+    width: calc(100% - 30px);
+  }
+ .swiper-slide-container{
+  top: 20%;
+  left: 25%;
+  width: 100%;
+ }
+ .register-wrapper{
+  margin: 0 10px;
+ }
+ .signUp-input{
+  padding-left: 15px;
+ }
+ .signUp-button{
+  padding: 0 15px;
+ }
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
-  .nav-bar {
-    display: flex;
-    max-width: 1920px;
-    margin: 0 19%;
-    justify-content: space-between;
-  }
 
   .swiper-button-next {
     margin-right: 18%;
@@ -205,13 +206,10 @@
   .swiper-button-prev {
     margin-left: 18%;
   }
-  /* .swiper-slide {
-    left: 24%;
-  } */
   .swiper-slide-container{
     left: 24%;}
   .swiper-slide-content {
-    max-width: 52%;
+    max-width: 42%;
   }
   .products {
     width: 63%;
@@ -220,8 +218,6 @@
 .left-content{
     width: 49%;
     height: 100%;
-    background-color: #b15656;
-    border-radius: 10px;
 }
 .right-content{
     display: flex;
