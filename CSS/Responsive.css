@@ -133,7 +133,7 @@
     font-weight: 700;
   }
   .shop-info {
-    min-height: 600px;
+    min-height: 500px;
   }
   .product-name {
     overflow: hidden;
@@ -173,8 +173,25 @@
   .card {
     width: 50%;
   }
-}
 
+.register-wrapper{
+  margin: 0 10px;
+ }
+ .signUp-input{
+  padding-left: 15px;
+ }
+ 
+ .signUp-button{
+  padding: 0 15px;
+  background-color: #333333;
+  color: white;
+ }
+
+.register-wrapper input::placeholder{
+  font-size: 14px;
+  color:rgba(154, 154, 154, 1);
+}
+}
 @media screen and (max-width: 320px) {
   .cart-product .cart-product-detail .card {
     width: 100%;
@@ -193,9 +210,16 @@
  .signUp-input{
   padding-left: 15px;
  }
+ 
  .signUp-button{
   padding: 0 15px;
+  background-color: #333333;
+  color: white;
  }
+}
+.register-wrapper input::placeholder{
+  font-size: 13px;
+  color:rgba(154, 154, 154, 1);
 }
 
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
